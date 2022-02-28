@@ -52,8 +52,8 @@ class MainActivity : AppCompatActivity() {
             }
             buttonSign.id -> {
                 try {
-                buttonClick = if (buttonClick[0]=='-') buttonClick.substring(1)
-                else "-$buttonClick"}
+                    buttonClick = if (buttonClick[0]=='-') buttonClick.substring(1)
+                    else "-$buttonClick"}
                 catch (e:Exception) {
                     buttonClick = "0"
                 }
