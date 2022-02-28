@@ -27,10 +27,7 @@ class MainActivity : AppCompatActivity() {
         var buttonClick = textViewOutput.text.toString()
         var buttonSelect = view as Button
         when(buttonSelect.id) {
-            button0.id -> {
-                if (buttonClick.isNotEmpty())
-                    buttonClick+="0"
-            }
+            button0.id -> buttonClick+="0"
             button1.id -> buttonClick+="1"
             button2.id -> buttonClick+="2"
             button3.id -> buttonClick+="3"
@@ -73,7 +70,6 @@ class MainActivity : AppCompatActivity() {
             buttonMultiplication.id -> operation="*"
             buttonDivision.id -> operation="/"
         }
-
     }
 
     fun equalsClick(view: View) {
