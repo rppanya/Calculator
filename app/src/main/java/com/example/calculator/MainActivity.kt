@@ -1,5 +1,4 @@
 package com.example.calculator
-import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -7,25 +6,20 @@ import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
-    var isNewOp = true
-    var firstNumber = ""
-    var operation = ""
-    var comma = false
-    @SuppressLint("SetTextI18n")
+    private var isNewOp = true
+    private var firstNumber = ""
+    private var operation = ""
+    private var comma = false
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        window.decorView.apply {
-            systemUiVisibility =
-                View.SYSTEM_UI_FLAG_HIDE_NAVIGATION or View.SYSTEM_UI_FLAG_FULLSCREEN
-        }
         setContentView(R.layout.activity_main)
     }
     fun numberClick(view: View) {
         if (isNewOp)
-            textViewOutput.setText("")
+            textViewOutput.text = ""
         isNewOp = false
         var buttonClick = textViewOutput.text.toString()
-        var buttonSelect = view as Button
+        val buttonSelect = view as Button
         when(buttonSelect.id) {
             button0.id -> buttonClick+="0"
             button1.id -> buttonClick+="1"
@@ -48,22 +42,22 @@ class MainActivity : AppCompatActivity() {
                 }
             }
             buttonSign.id -> {
-                try {
-                    buttonClick = if (buttonClick[0]=='-') buttonClick.substring(1)
-                    else "-$buttonClick"}
-                catch (e:Exception) {
-                    buttonClick = "0"
+                buttonClick = try {
+                    if (buttonClick[0]=='-') buttonClick.substring(1)
+                    else "-$buttonClick"
+                } catch (e:Exception) {
+                    "0"
                 }
             }
         }
-        textViewOutput.setText(buttonClick)
+        textViewOutput.text = buttonClick
     }
 
     fun operationClick(view: View) {
         isNewOp = true
         comma = false
         firstNumber = textViewOutput.text.toString()
-        var buttonSelect = view as Button
+        val buttonSelect = view as Button
         when(buttonSelect.id) {
             buttonPlus.id -> operation="+"
             buttonMinus.id -> operation="-"
@@ -73,7 +67,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun equalsClick(view: View) {
-        var newNumber = textViewOutput.text.toString()
+        val newNumber = textViewOutput.text.toString()
         var result = 0.0
         when(operation) {
             "+" -> result=firstNumber.toDouble()+newNumber.toDouble()
@@ -97,8 +91,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun percentClick(view: View) {
-        var percent = textViewOutput.text.toString().toDouble()/100
-        textViewOutput.setText(percent.toString())
+        val percent = textViewOutput.text.toString().toDouble()/100
+        textViewOutput.text = percent.toString()
         isNewOp = true
         comma = false
     }
