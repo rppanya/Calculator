@@ -379,4 +379,12 @@
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView" />
 
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/buttonGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="button0,button1,button2,button3,button4,button5,button6,button7,button8,button9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

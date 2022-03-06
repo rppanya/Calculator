@@ -6,6 +6,7 @@
     <style name="whiteButton">
         <item name="android:layout_width">80dp</item>
         <item name="android:layout_height">80dp</item>
+        <item name="android:backgroundTint">@color/backgroundColor</item>
         <item name="android:elevation">10dp</item>
         <item name="android:fontFamily">@font/montserratbold</item>
         <item name="android:stateListAnimator">@null</item>
