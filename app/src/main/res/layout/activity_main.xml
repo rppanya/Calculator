@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/backgroundColor"
+    app:guidelineUseRtl="true"
     tools:context=".MainActivity">
 
     <Button
@@ -15,14 +16,14 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="22dp"
         android:layout_marginBottom="59dp"
+        android:onClick="equalsClick"
         android:text="@string/equals"
         app:backgroundTint="@null"
-        android:onClick="equalsClick"
-        tools:ignore="UsingOnClickInXml"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonPlus" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonPlus"
+        tools:ignore="UsingOnClickInXml" />
 
     <Button
         android:id="@+id/buttonPlus"
@@ -31,14 +32,14 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="22dp"
         android:layout_marginBottom="155dp"
+        android:onClick="operationClick"
         android:text="@string/plus"
         app:backgroundTint="@null"
-        android:onClick="operationClick"
-        tools:ignore="UsingOnClickInXml"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonMinus" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonMinus"
+        tools:ignore="UsingOnClickInXml" />
 
     <Button
         android:id="@+id/buttonMinus"
@@ -47,14 +48,14 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="22dp"
         android:layout_marginBottom="251dp"
+        android:onClick="operationClick"
         android:text="@string/minus"
         app:backgroundTint="@null"
-        android:onClick="operationClick"
-        tools:ignore="UsingOnClickInXml"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonMultiplication" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonMultiplication"
+        tools:ignore="UsingOnClickInXml" />
 
     <Button
         android:id="@+id/buttonMultiplication"
@@ -63,14 +64,14 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="22dp"
         android:layout_marginBottom="347dp"
+        android:onClick="operationClick"
         android:text="@string/multiplication"
         app:backgroundTint="@null"
-        android:onClick="operationClick"
-        tools:ignore="UsingOnClickInXml"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonDivision" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonDivision"
+        tools:ignore="UsingOnClickInXml" />
 
     <Button
         android:id="@+id/buttonDivision"
@@ -79,15 +80,14 @@
         android:layout_marginTop="25dp"
         android:layout_marginEnd="22dp"
         android:layout_marginBottom="443dp"
+        android:onClick="operationClick"
         android:text="@string/division"
         app:backgroundTint="@null"
-        android:onClick="operationClick"
-        tools:ignore="UsingOnClickInXml"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-/>
+        tools:ignore="UsingOnClickInXml" />
 
     <Button
         android:id="@+id/button0"
@@ -104,10 +104,8 @@
         app:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button1"
-        app:layout_constraintVertical_bias="0.0"
         tools:ignore="UsingOnClickInXml" />
 
     <Button
@@ -122,10 +120,8 @@
         app:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button3"
-        app:layout_constraintVertical_bias="0.0"
         tools:ignore="UsingOnClickInXml" />
 
     <Button
@@ -135,14 +131,14 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="116dp"
         android:layout_marginBottom="155dp"
+        android:onClick="numberClick"
         android:text="@string/three"
         app:backgroundTint="@null"
-        android:onClick="numberClick"
-        tools:ignore="UsingOnClickInXml"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button6" />
+        app:layout_constraintTop_toBottomOf="@+id/button6"
+        tools:ignore="UsingOnClickInXml" />
 
     <Button
         android:id="@+id/button2"
@@ -151,14 +147,14 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="215dp"
         android:layout_marginBottom="155dp"
+        android:onClick="numberClick"
         android:text="@string/two"
         app:backgroundTint="@null"
-        android:onClick="numberClick"
-        tools:ignore="UsingOnClickInXml"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button5" />
+        app:layout_constraintTop_toBottomOf="@+id/button5"
+        tools:ignore="UsingOnClickInXml" />
 
     <Button
         android:id="@+id/button1"
@@ -167,14 +163,14 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="307dp"
         android:layout_marginBottom="155dp"
+        android:onClick="numberClick"
         android:text="@string/one"
         app:backgroundTint="@null"
-        android:onClick="numberClick"
-        tools:ignore="UsingOnClickInXml"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
+        app:layout_constraintTop_toBottomOf="@+id/button4"
+        tools:ignore="UsingOnClickInXml" />
 
     <Button
         android:id="@+id/button6"
@@ -183,14 +179,14 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="116dp"
         android:layout_marginBottom="251dp"
+        android:onClick="numberClick"
         android:text="@string/six"
         app:backgroundTint="@null"
-        android:onClick="numberClick"
-        tools:ignore="UsingOnClickInXml"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button9" />
+        app:layout_constraintTop_toBottomOf="@+id/button9"
+        tools:ignore="UsingOnClickInXml" />
 
     <Button
         android:id="@+id/button5"
@@ -199,14 +195,14 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="212dp"
         android:layout_marginBottom="251dp"
+        android:onClick="numberClick"
         android:text="@string/fife"
         app:backgroundTint="@null"
-        android:onClick="numberClick"
-        tools:ignore="UsingOnClickInXml"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button8" />
+        app:layout_constraintTop_toBottomOf="@+id/button8"
+        tools:ignore="UsingOnClickInXml" />
 
     <Button
         android:id="@+id/button4"
@@ -215,14 +211,14 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="307dp"
         android:layout_marginBottom="251dp"
+        android:onClick="numberClick"
         android:text="@string/four"
         app:backgroundTint="@null"
-        android:onClick="numberClick"
-        tools:ignore="UsingOnClickInXml"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button7" />
+        app:layout_constraintTop_toBottomOf="@+id/button7"
+        tools:ignore="UsingOnClickInXml" />
 
     <Button
         android:id="@+id/button8"
@@ -231,14 +227,14 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="212dp"
         android:layout_marginBottom="347dp"
+        android:onClick="numberClick"
         android:text="@string/ate"
         app:backgroundTint="@null"
-        android:onClick="numberClick"
-        tools:ignore="UsingOnClickInXml"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonSign" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonSign"
+        tools:ignore="UsingOnClickInXml" />
 
     <Button
         android:id="@+id/button9"
@@ -247,14 +243,14 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="116dp"
         android:layout_marginBottom="347dp"
+        android:onClick="numberClick"
         android:text="@string/nine"
         app:backgroundTint="@null"
-        android:onClick="numberClick"
-        tools:ignore="UsingOnClickInXml"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonPercent" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonPercent"
+        tools:ignore="UsingOnClickInXml" />
 
     <Button
         android:id="@+id/button7"
@@ -263,15 +259,14 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="307dp"
         android:layout_marginBottom="347dp"
-        android:text="@string/seven"
         android:onClick="numberClick"
-        tools:ignore="UsingOnClickInXml"
+        android:text="@string/seven"
         app:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonAC"
-         />
+        tools:ignore="UsingOnClickInXml" />
 
     <Button
         android:id="@+id/buttonPercent"
@@ -280,9 +275,9 @@
         android:layout_marginTop="25dp"
         android:layout_marginEnd="116dp"
         android:layout_marginBottom="445dp"
+        android:onClick="percentClick"
         android:text="@string/percent"
         app:backgroundTint="@null"
-        android:onClick="percentClick"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -311,10 +306,10 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="548dp"
-        android:layout_marginEnd="23dp"
         android:layout_marginStart="23dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="548dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -344,9 +339,9 @@
         android:layout_marginTop="25dp"
         android:layout_marginEnd="306dp"
         android:layout_marginBottom="445dp"
+        android:onClick="acClick"
         android:text="@string/ac"
         app:backgroundTint="@null"
-        android:onClick="acClick"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -360,14 +355,14 @@
         android:layout_marginTop="25dp"
         android:layout_marginEnd="212dp"
         android:layout_marginBottom="445dp"
+        android:onClick="numberClick"
         android:text="@string/sign"
         app:backgroundTint="@null"
-        android:onClick="numberClick"
-        tools:ignore="UsingOnClickInXml"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="UsingOnClickInXml" />
 
     <TextView
         android:id="@+id/textViewOutput"
@@ -390,5 +385,4 @@
         app:constraint_referenced_ids="button0,button1,button2,button3,button4,button5,button6,button7,button8,button9"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
